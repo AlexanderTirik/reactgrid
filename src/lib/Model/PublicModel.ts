@@ -85,6 +85,14 @@ export interface ReactGridProps {
     readonly onCellsChanged?: (cellChanges: CellChange[]) => void;
 
     /** 
+     * Called when cells was selected (e.g. property `value`)
+     * 
+     * @param {CellChange[]} cellSelects Array of cell changes
+     * @returns {void}
+     */
+     readonly onCellsSelected?: (cellSelects: Array<CellLocation[]>) => void;
+
+    /** 
      * Focus position has been changed
      * 
      * @param {CellLocation} location New focus location
