@@ -1,4 +1,4 @@
-# ReactGrid - Spreadsheet experience for your React app
+# ReactGrid - Spreadsheet experience for your React app :)
 
 <div align="center">
 
