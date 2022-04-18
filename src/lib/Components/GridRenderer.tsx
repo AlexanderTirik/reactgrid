@@ -6,6 +6,8 @@ import { useReactGridState } from './StateProvider';
 
 export const GridRenderer: React.FC<GridRendererProps> = ({ eventHandlers, children }) => {
     const { cellMatrix, props } = useReactGridState();
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
     return (<ErrorBoundary>
         <div
             className='reactgrid'

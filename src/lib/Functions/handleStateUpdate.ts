@@ -11,7 +11,7 @@ export function handleStateUpdate<TState extends State = State>(newState: TState
         changes.forEach(() => newState.queuedCellChanges.pop());
     }
     const selects = getSelectedLocations(newState);
-    if (changes.length > 0 && props.onCellsSelected) {
+    if (selects.length > 0 && props.onCellsSelected) {
         props.onCellsSelected([...selects]);
     }
     if (newState !== state) {

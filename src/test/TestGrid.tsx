@@ -261,6 +261,8 @@ export const TestGrid: React.FC<TestGridProps> = (props) => {
                         <Logo width={config.rgViewportWidth} />
                     </div>
                 }
+                {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                {/* @ts-ignore */}
                 {render && <Component
                     rows={rows}
                     columns={columns}
@@ -376,6 +378,8 @@ export const withDiv = <T extends Record<string, unknown> & TestGridProps>(Compo
     const wrappedComponent = ({ ...props }: TestGridProps) => {
         return (
             <div style={{ ...props.config.withDivComponentStyles }}>
+                {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+                {/* @ts-ignore */}
                 <Component {...props as T} />
             </div>
         )
